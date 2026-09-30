@@ -1,0 +1,15 @@
+# macOS system files
+.DS_Store
+._*
+
+# Windows system files (for teammates on Windows)
+Thumbs.db
+desktop.ini
+
+# Editor / IDE settings
+.vscode/
+.idea/
+*.swp
+
+# Secrets (API keys, passwords)
+.env
