@@ -1,0 +1,55 @@
+.layout {
+  display: flex;
+  gap: 2rem;              /* space between filter bar and cards */
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  align-items: flex-start;
+}
+
+.filters {
+  flex: 0 0 220px;        /* fixed 220px wide, won't shrink */
+}
+
+#pricing {
+  flex: 1;                /* cards take the remaining width */
+}
+
+/* optional: tidy up the filter controls */
+.filters label {
+  display: block;
+  margin: 1rem 0 0.25rem;
+}
+
+.filters input[type="text"],
+.filters select {
+  width: 100%;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+/* The card look */
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card img {
+  width: 100%;        /* fit the card's width */
+  height: 160px;      /* fixed height so all cards match */
+  object-fit: cover;  /* crop instead of stretching */
+  display: block;     /* removes the small gap under images */
+}
+
+.card {
+  overflow: hidden;   /* clips the image to the rounded corners */
+}

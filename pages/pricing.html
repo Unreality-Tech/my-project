@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="../css/pricing.css">
+    <title>Pricing</title>
+</head>
+<body>
+    <header>
+        <h1>Ureality</h1>
+        <aside>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+            </ul>
+        </aside>
+    </header>
+    <main>
+        <div class="layout">
+            <aside class="filters">
+                <h2>Filters</h2>
+                <label for="search">Search</label>
+                <input type="text" id="search" name="search" placeholder="Search products...">
+                
+                <label for="price">Price Range</label>
+                <input type="range" id="price" name="price" min="0" max="500" step="10">
+                <span id="priceValue">$0 - $500</span>
+
+                <label for="sort">Sort By</label>
+                <select id="sort" name="sort">
+                    <option value="name">Name</option>
+                    <option value="price">Price</option>
+                </select>
+            </aside>
+
+            <section id="pricing">
+                <div class="card-grid">
+                    <div class="card">
+                        <img src="https://picsum.photos/400/200?1" alt="Sample image" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Product 1</h3>
+                            <p class="card-text">A short description goes here.</p>
+                            <a href="#" class="card-btn">Read more</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://picsum.photos/400/200?1" alt="Sample image" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Product 2</h3>
+                            <p class="card-text">A short description goes here.</p>
+                            <a href="#" class="card-btn">Read more</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://picsum.photos/400/200?1" alt="Sample image" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Product 3</h3>
+                            <p class="card-text">A short description goes here.</p>
+                            <a href="#" class="card-btn">Read more</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://picsum.photos/400/200?1" alt="Sample image" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Product 4</h3>
+                            <p class="card-text">A short description goes here.</p>
+                            <a href="#" class="card-btn">Read more</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://picsum.photos/400/200?1" alt="Sample image" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Product 5</h3>
+                            <p class="card-text">A short description goes here.</p>
+                            <a href="#" class="card-btn">Read more</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://picsum.photos/400/200?1" alt="Sample image" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Product 6</h3>
+                            <p class="card-text">A short description goes here.</p>
+                            <a href="#" class="card-btn">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Ureality. All rights reserved.</p>
+    </footer>
+</body>
+</html>
