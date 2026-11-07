@@ -1,7 +1,52 @@
-/* ==========================================
-   GLOBAL STYLES (shared by every page)
-   Owner: TODO (one person)
-   Ask the owner before changing anything here.
-   ========================================== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #b2fefa, #0ed2f7);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-/* ---------- Design tokens ---------- */
+.main-container {
+  width: 90%;
+  max-width: 1000px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 30px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333333;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #007991;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #eeeeee;
+  color: #777777;
+  font-size: 14px;
+}
