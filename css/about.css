@@ -1,4 +1,5 @@
 body.about-page {
+	/* Couleurs reprises de la page d'accueil et appliquées à la page À propos. */
 	--about-accent: #007991;
 	--about-ink: #253044;
 	--about-muted: #68778b;
@@ -13,12 +14,14 @@ body.about-page {
 	line-height: 1.6;
 }
 
+/* Inclut bordures et marges internes dans les dimensions des éléments. */
 .about-page *,
 .about-page *::before,
 .about-page *::after {
 	box-sizing: border-box;
 }
 
+/* Fil d'Ariane aligné sur la largeur du contenu principal. */
 .about-page > nav {
 	width: min(100% - 48px, 1000px);
 	margin: 0 auto;
@@ -51,6 +54,7 @@ body.about-page {
 	text-decoration: underline;
 }
 
+/* Grille à deux colonnes pour l'histoire et la mission. */
 .about-page main {
 	display: grid;
 	grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -71,6 +75,7 @@ body.about-page {
 	grid-column: 1 / -1;
 }
 
+/* Présentation centrée du slogan et du texte d'introduction. */
 .about-page main > section:first-child {
 	padding: 48px 24px 42px;
 	text-align: center;
@@ -119,6 +124,7 @@ body.about-page {
 	margin: 0 auto;
 }
 
+/* Chaque membre est affiché dans une carte, avec un avatar de remplacement. */
 .about-page .membre {
 	display: grid;
 	grid-template-columns: 42px minmax(0, 1fr);
@@ -155,6 +161,7 @@ body.about-page {
 	display: none;
 }
 
+/* Nom et rôle restent côte à côte; la description passe à la ligne suivante. */
 .about-page .membre-texte {
 	display: grid;
 	grid-template-columns: minmax(0, 1fr) auto;
@@ -183,6 +190,7 @@ body.about-page {
 	text-align: right;
 }
 
+/* Cartes des repères chiffrés, réparties sur trois colonnes. */
 .about-page .cles {
 	display: inline-flex;
 	width: calc(33.333% - 9px);
@@ -220,6 +228,7 @@ body.about-page {
 	font-weight: 700;
 }
 
+/* Sur petit écran, les sections et les cartes s'empilent en une seule colonne. */
 @media (max-width: 700px) {
 	.about-page > nav,
 	.about-page main {
