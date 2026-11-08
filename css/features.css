@@ -1,0 +1,54 @@
+/* ===========================================================
+   features.css — styles only for features.html
+   =========================================================== */
+
+/* Each product feature block: picture on one side, text on the other */
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 30px;
+  margin-bottom: 24px;
+  transition: box-shadow 0.3s;
+}
+.feature:hover { box-shadow: 0 12px 28px rgba(37, 48, 68, 0.12); }    /* hover effect */
+.feature.reverse { flex-direction: row-reverse; }                     /* alternate the sides */
+.feature img { width: 220px; flex: none; background: #eef6f9; border-radius: 14px; padding: 14px; transition: transform 0.4s; }
+.feature:hover img { transform: rotate(-4deg) scale(1.05); }          /* hover effect */
+.feature h2 { margin: 0 0 6px; color: var(--teal); }
+.feature ul { padding-left: 20px; color: var(--muted); }
+.feature li { margin-bottom: 6px; }
+.feature li::marker { color: var(--teal); }
+
+.quote {
+  text-align: center;
+  background: #e6fbfd;
+  border-left: 5px solid var(--teal);
+  border-radius: 8px;
+  padding: 24px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+/* ---------- FAQ (questions that open and close) ---------- */
+.faq { margin-top: 40px; }
+.faq h2 { text-align: center; }
+details {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-bottom: 10px;
+}
+summary { cursor: pointer; font-weight: bold; }
+summary:hover { color: var(--teal); }          /* hover effect */
+details p { color: var(--muted); margin-bottom: 0; }
+
+@media (max-width: 700px) {
+  .feature, .feature.reverse { flex-direction: column; text-align: center; }
+  .feature ul { text-align: left; }
+}

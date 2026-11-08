@@ -1,0 +1,88 @@
+/* ===========================================================
+   home.css — styles only for index.html
+   =========================================================== */
+
+/* ---------- Hero (big top section) ---------- */
+.hero {
+  /* the same cyan gradient as the original index.css */
+  background: linear-gradient(to bottom right, #b2fefa, #0ed2f7);
+  padding: 70px 0;
+}
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.hero-text { flex: 1; animation: fadeUp 1s ease; }   /* animation: slides up when the page loads */
+.hero-text h1 { font-size: 56px; line-height: 1.1; margin: 0 0 16px; color: var(--ink); }
+.hero-text h1 span { color: var(--teal); }
+.hero-text p { font-size: 20px; color: #3d5266; min-height: 64px; }   /* min-height stops the page jumping while text types */
+.hero-buttons { margin-top: 20px; }
+.hero-buttons .btn { margin-right: 10px; }
+
+.hero-image { flex: 1; text-align: center; }
+.hero-image img {
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
+  animation: float 4s ease-in-out infinite;     /* animation: gently floats up and down */
+}
+
+/* Keyframes describe an animation step by step */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-18px); }
+}
+
+/* ---------- Generic section ---------- */
+.section { padding: 60px 0 10px; }
+.section h2 { font-size: 32px; margin: 0 0 6px; }
+.section .subtitle { color: var(--muted); margin: 0 0 28px; }
+
+/* ---------- "How it works" steps ---------- */
+.steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; }
+.step {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 26px;
+  transition: transform 0.3s, border-color 0.3s;
+}
+.step:hover { transform: translateY(-6px); border-color: var(--teal); }   /* hover effect */
+.step .number {
+  width: 44px; height: 44px; line-height: 44px;
+  border-radius: 50%;
+  background: var(--teal); color: #fff;
+  text-align: center; font-weight: bold; font-size: 20px;
+  margin-bottom: 14px;
+}
+.step h3 { margin: 0 0 8px; }
+.step p { margin: 0; color: var(--muted); }
+
+/* ---------- Place / virtual place band ---------- */
+.band { background: #fff; border-block: 1px solid var(--border); margin-top: 60px; padding: 50px 0; }
+.band .container { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+.band-box { padding: 26px; border-radius: 14px; background: var(--page); border: 1px solid var(--border); transition: background 0.3s; }
+.band-box:hover { background: var(--mint); }       /* hover effect */
+.band-box h3 { color: var(--teal); margin-top: 0; }
+
+/* ---------- Call to action ---------- */
+.cta {
+  text-align: center;
+  margin-top: 60px;
+  padding: 50px 20px;
+  border-radius: 14px;
+  background: linear-gradient(to bottom right, #b2fefa, #0ed2f7);
+}
+.cta h2 { margin: 0 0 10px; font-size: 34px; }
+
+@media (max-width: 800px) {
+  .hero .container { flex-direction: column; text-align: center; }
+  .hero-text h1 { font-size: 40px; }
+  .band .container { grid-template-columns: 1fr; }
+}

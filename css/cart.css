@@ -1,0 +1,40 @@
+/* ===========================================================
+   cart.css — styles only for cart.html
+   =========================================================== */
+
+.cart-box { max-width: 760px; margin: 20px auto 0; }
+
+.cart-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 12px;
+  transition: box-shadow 0.3s;
+}
+.cart-row:hover { box-shadow: 0 8px 20px rgba(37, 48, 68, 0.1); }   /* hover effect */
+.cart-row img { width: 80px; background: #eef6f9; border-radius: 10px; padding: 6px; }
+.cart-info { flex: 1; }
+.cart-info h4 { margin: 0; }
+.cart-info small { color: var(--muted); }
+
+.qty button {
+  width: 30px; height: 30px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.qty button:hover { background: var(--mint); }
+.qty span { display: inline-block; min-width: 26px; text-align: center; }
+
+.remove { background: none; border: none; color: var(--muted); text-decoration: underline; cursor: pointer; }
+.remove:hover { color: #c0392b; }
+
+.cart-total { display: flex; justify-content: space-between; font-size: 22px; font-weight: bold; margin: 24px 0 16px; }
+.message { text-align: center; color: var(--teal); font-weight: bold; margin-top: 16px; }
+.empty-cart { text-align: center; color: var(--muted); padding: 50px 0; }

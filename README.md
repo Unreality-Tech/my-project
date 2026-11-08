@@ -43,3 +43,17 @@ Our flagship platform is a mixed-reality and spatial computing headset that lets
 ---
 
 <sub>© Ureality-Tech. All rights reserved.</sub>
+---
+
+## Running the site
+
+Open `index.html` in a browser. It is plain HTML, CSS and JavaScript (no libraries, no build step).
+
+```
+index.html  products.html  features.html  about.html  cart.html
+css/     global.css (shared) + one file per page
+js/      data.js (product list) · main.js (cart + card builder) · home.js · products.js · cart.js
+images/  product illustrations (SVG) - replace with real photos in data.js
+_advanced_version/  earlier 3D (three.js) version, kept for reference
+_legacy/            the original unorganised files
+```

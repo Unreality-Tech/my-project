@@ -1,0 +1,53 @@
+/* ===========================================================
+   products.css — styles only for products.html
+   =========================================================== */
+
+/* Left column = filters, right column = product cards */
+.shop { display: flex; gap: 30px; align-items: flex-start; margin-top: 20px; }
+
+.filters {
+  flex: 0 0 240px;                     /* fixed 240px wide */
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px;
+}
+.filters h3 { margin-top: 0; }
+.filters label { display: block; margin: 16px 0 6px; font-weight: bold; font-size: 14px; }
+.filters input[type="text"],
+.filters select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 15px;
+}
+.filters input[type="text"]:focus,
+.filters select:focus { outline: none; border-color: var(--teal); }   /* highlight when clicked */
+.filters input[type="range"] { width: 100%; accent-color: var(--teal); }
+.filters .btn { width: 100%; margin-top: 18px; padding: 10px; }
+
+.results { flex: 1; }
+
+/* Category buttons ("tabs") */
+.tabs { margin-bottom: 20px; }
+.tab {
+  padding: 8px 18px;
+  margin: 0 6px 8px 0;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.tab:hover { background: var(--mint); }          /* hover effect */
+.tab.active { background: var(--teal); color: #fff; border-color: var(--teal); }
+
+.count { color: var(--muted); margin-bottom: 16px; }
+.empty { padding: 40px; text-align: center; color: var(--muted); grid-column: 1 / -1; }
+
+@media (max-width: 800px) {
+  .shop { flex-direction: column; }
+  .filters { flex: none; width: 100%; }
+}

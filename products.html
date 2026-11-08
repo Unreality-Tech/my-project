@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products — Ureality</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/products.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <a class="logo" href="index.html">Ureality</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="features.html">Features</a>
+        <a href="about.html">About Us</a>
+        <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-title container">
+    <h1>Our products</h1>
+    <p>Stay connected with the people who matter, no matter the distance.</p>
+  </div>
+
+  <div class="container shop">
+    <!-- Left: filters -->
+    <aside class="filters">
+      <h3>Filters</h3>
+
+      <label for="search">Search</label>
+      <input type="text" id="search" placeholder="Search products...">
+
+      <label for="price">Max price: <span id="price-value">$450</span></label>
+      <input type="range" id="price" min="100" max="450" step="10" value="450">
+
+      <label for="sort">Sort by</label>
+      <select id="sort">
+        <option value="default">Featured</option>
+        <option value="low">Price: low to high</option>
+        <option value="high">Price: high to low</option>
+      </select>
+
+      <button class="btn" id="reset">Reset filters</button>
+    </aside>
+
+    <!-- Right: category buttons + cards (cards are added by js/products.js) -->
+    <section class="results">
+      <div class="tabs">
+        <button class="tab active" data-category="All">All wearables</button>
+        <button class="tab" data-category="Smart watches">Smart watches</button>
+        <button class="tab" data-category="Smart glasses">Smart glasses</button>
+        <button class="tab" data-category="Smart rings">Smart rings</button>
+        <button class="tab" data-category="Necklaces">Necklaces</button>
+      </div>
+      <div class="count" id="count"></div>
+      <div class="grid" id="grid"></div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="container">
+      <strong>Ureality</strong>
+      <p>Closing the distance, one shared space at a time.</p>
+      <p>&copy; 2026 Ureality-Tech. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
+</body>
+</html>

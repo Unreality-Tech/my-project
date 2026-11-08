@@ -1,11 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unreality Technologies</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ureality — Be there, anywhere</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
 
+  <header>
+    <div class="container">
+      <a class="logo" href="index.html">Ureality</a>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="products.html">Products</a>
+        <a href="features.html">Features</a>
+        <a href="about.html">About Us</a>
+        <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-text">
+        <h1>Be there.<br><span>Anywhere.</span></h1>
+        <p id="typed"></p>
+        <div class="hero-buttons">
+          <a class="btn" href="products.html">Shop wearables</a>
+          <a class="btn btn-light" href="features.html">See features</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/glasses-cyan.svg" alt="Ureality smart glasses">
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured products (cards are added by js/home.js) -->
+  <section class="section container">
+    <h2>Popular right now</h2>
+    <p class="subtitle">Our most-loved wearables.</p>
+    <div class="grid" id="featured"></div>
+  </section>
+
+  <!-- How it works -->
+  <section class="section container">
+    <h2>How it works</h2>
+    <p class="subtitle">Three steps to being together.</p>
+    <div class="steps">
+      <div class="step"><div class="number">1</div><h3>Wear it</h3><p>Put on a watch, ring, necklace or glasses. They pair with your phone in seconds.</p></div>
+      <div class="step"><div class="number">2</div><h3>Pick your person</h3><p>See who is online and send an invite. They feel it as a pulse on their wrist.</p></div>
+      <div class="step"><div class="number">3</div><h3>Beam in</h3><p>They appear in your living room as a hologram, or you step into theirs.</p></div>
+    </div>
+  </section>
+
+  <!-- Your place or theirs -->
+  <section class="band">
+    <div class="container">
+      <div class="band-box"><h3>They come to you</h3><p>Friends appear life-size on your sofa. Watch movies and play games in your own room.</p></div>
+      <div class="band-box"><h3>You go to them</h3><p>Step into a friend's living room from yours. Same couch, same game night, different postcode.</p></div>
+    </div>
+  </section>
+
+  <!-- Call to action -->
+  <section class="container">
+    <div class="cta">
+      <h2>Ready to be there?</h2>
+      <p>Pick your wearable and close the distance tonight.</p>
+      <a class="btn" href="products.html">Explore all wearables</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <strong>Ureality</strong>
+      <p>Closing the distance, one shared space at a time.</p>
+      <p>&copy; 2026 Ureality-Tech. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
 </body>
 </html>
