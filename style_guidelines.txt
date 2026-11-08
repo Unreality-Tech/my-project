@@ -1,0 +1,27 @@
+Ce document a pour but de décrire le style utilisé pour notre site web : couleurs, Police, etc...
+
+Pour notre document, les différentes couleurs que nous avons utilisé :
+- gris #555555
+- Bleu turquoise : #b2fefa
+- Bleu : #0ed2f7
+- Blanc : #ffffff
+
+Nous avons décidé de faire un avec des couleurs solides et des variations de couleurs proches pour donner un effet de dégradé.
+
+Les polices que nous utilisés sont :
+- Arial, sans serif
+
+The purpose of this document is to describe the style used for our website: colors, fonts, etc.
+
+For this document, the different colors we used are:
+
+- Gray: #555555
+- Turquoise blue: #b2fefa
+- Blue: #0ed2f7
+- White: #ffffff
+
+We decided to use solid colors and closely related color variations to create a gradient effect.
+
+The fonts we used are:
+
+- Arial, sans serif
